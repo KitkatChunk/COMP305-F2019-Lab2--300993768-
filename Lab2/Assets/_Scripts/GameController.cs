@@ -42,7 +42,6 @@ public class GameController : MonoBehaviour
     [Header("Game Settings")]
     public ScoreBoard scoreBoard;
 
-
     // public properties
     public int Lives
     {
@@ -61,7 +60,7 @@ public class GameController : MonoBehaviour
             }
             else
             {
-                livesLabel.text = "Lives: " + _lives.ToString();
+                livesLabel.text = "Lives: " + _lives;
             }
            
         }
@@ -80,12 +79,10 @@ public class GameController : MonoBehaviour
 
 
             if (scoreBoard.highScore < _score)
-            //if (highScoreSO.score < _score)
             {
                 scoreBoard.highScore = _score;
-                //highScoreSO.score = _score;
             }
-            scoreLabel.text = "Score: " + _score.ToString();
+            scoreLabel.text = "Score: " + _score;
         }
     }
 
@@ -98,13 +95,12 @@ public class GameController : MonoBehaviour
 
     private void GameObjectInitialization()
     {
-
         startLabel = GameObject.Find("StartLabel");
         endLabel = GameObject.Find("EndLabel");
         startButton = GameObject.Find("StartButton");
         restartButton = GameObject.Find("RestartButton");
 
-       //scoreBoard = Resources.FindObjectsOfTypeAll<ScoreBoard>()[0] as ScoreBoard;
+        //scoreBoard = Resources.FindObjectsOfTypeAll<ScoreBoard>()[0] as ScoreBoard;
     }
 
 

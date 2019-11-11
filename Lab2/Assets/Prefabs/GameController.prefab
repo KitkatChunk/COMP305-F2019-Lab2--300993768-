@@ -352,4 +352,4 @@ MonoBehaviour:
   startButton: {fileID: 0}
   endLabel: {fileID: 0}
   restartButton: {fileID: 0}
-  scoreBoard: {fileID: 11400000, guid: b155fd52e5fdf794ea36551c8c6d06e6, type: 2}
+  scoreBoard: {fileID: 11400000, guid: b5b438e756ef98744a5f6d576ff5ef21, type: 2}
